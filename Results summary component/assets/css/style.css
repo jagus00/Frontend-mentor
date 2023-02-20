@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.results-summary {
+  max-width: 736px;
+  height: 512px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+  border-radius: 32px;
+}
+.results-summary .results-summary__hero, .results-summary .results-summary__info {
+  width: 50%;
+}
+.results-summary .results-summary__hero {
+  text-align: center;
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 32px;
+  padding: 35px;
+}
+.results-summary .results-summary__hero h2 {
+  color: #cac9ff;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 700;
+}
+.results-summary .results-summary__hero .circle {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+  border-radius: 500px;
+  height: 200px;
+  width: 200px;
+  vertical-align: middle;
+}
+.results-summary .results-summary__hero .circle div {
+  margin: auto;
+}
+.results-summary .results-summary__hero .circle .big-number {
+  font-size: 72px;
+  font-weight: 800;
+}
+.results-summary .results-summary__hero .circle .quantity {
+  font-size: 18px;
+  font-weight: 700;
+  color: #8980f4;
+  margin-top: -5px;
+}
+.results-summary .results-summary__hero h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.results-summary .results-summary__hero p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.results-summary .results-summary__info {
+  padding: 35px 35px 35px 40px;
+}
+.results-summary .results-summary__info h2 {
+  color: #303B59;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.results-summary .results-summary__info .element {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 18px;
+}
+.results-summary .results-summary__info .element h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.results-summary .results-summary__info .element p {
+  margin: 0;
+}
+.results-summary .results-summary__info .element .feature-red, .results-summary .results-summary__info .element .feature-yellow, .results-summary .results-summary__info .element .feature-green, .results-summary .results-summary__info .element .feature-blue {
+  display: flex;
+}
+.results-summary .results-summary__info .element .feature-red {
+  color: hsl(0deg, 100%, 67%);
+}
+.results-summary .results-summary__info .element .feature-yellow {
+  color: hsl(39deg, 100%, 56%);
+}
+.results-summary .results-summary__info .element .feature-green {
+  color: hsl(166deg, 100%, 37%);
+}
+.results-summary .results-summary__info .element .feature-blue {
+  color: hsl(234deg, 85%, 45%);
+}
+.results-summary .results-summary__info .element img {
+  width: 20px;
+  height: 20px;
+}
+.results-summary .results-summary__info .element .number-of {
+  color: #9298ac;
+  font-size: 18px;
+  font-weight: 700;
+}
+.results-summary .results-summary__info .element .number-of span {
+  color: #303B59;
+  font-weight: 700;
+}
+.results-summary .results-summary__info .red, .results-summary .results-summary__info .yellow, .results-summary .results-summary__info .green, .results-summary .results-summary__info .blue {
+  border-radius: 12px;
+}
+.results-summary .results-summary__info .red {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+}
+.results-summary .results-summary__info .yellow {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+}
+.results-summary .results-summary__info .green {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+}
+.results-summary .results-summary__info .blue {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+}
+.results-summary .continue {
+  background: #303B59;
+  border-radius: 128px;
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+  padding: 20px 40px;
+}
+
+.attribution {
+  margin-top: 50px !important;
+}/*# sourceMappingURL=style.css.map */
