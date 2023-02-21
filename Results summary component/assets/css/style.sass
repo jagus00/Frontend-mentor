@@ -6,8 +6,8 @@ $red: hsl(0, 100%, 67%)
 $yellow: hsl(39, 100%, 56%)
 $green: hsl(166, 100%, 37%)
 $blue: hsl(234, 85%, 45%)
+$navyBlue: #303B59
 $grey: #cac9ff
-
 
 *
     box-sizing: border-box
@@ -20,7 +20,7 @@ body
 .results-summary
     max-width: 736px
     height: 512px
-    margin: auto
+    margin: calc(50vh - 256px) auto auto auto
     display: flex
     justify-content: center
     box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15)
@@ -66,7 +66,7 @@ body
     .results-summary__info
         padding: 35px 35px 35px 40px
         h2
-            color: #303B59
+            color: $navyBlue
             font-size: 24px
             font-weight: 700
             margin-bottom: 12px
@@ -94,12 +94,13 @@ body
             img
                 width: 20px
                 height: 20px
+                margin-right: 15px
             .number-of
                 color: #9298ac
                 font-size: 18px
                 font-weight: 700
                 span
-                    color: #303B59
+                    color: $navyBlue
                     font-weight: 700
         .red, .yellow, .green, .blue
             border-radius: 12px
@@ -112,11 +113,54 @@ body
         .blue
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6
     .continue
-        background: #303B59
+        background: $navyBlue
+        text-align: center
+        display: block
         border-radius: 128px
         color: $white
         text-decoration: none
         padding: 20px 40px
+        margin-top: 25px
+        &:hover
+            background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%)
     
 .attribution
     margin-top: 50px !important
+    font-size: 11px
+    text-align: center
+    a
+        color: hsl(228, 45%, 44%)
+
+// Mobile version
+@media (max-width: 600px)
+    .results-summary
+        margin: 0
+        height: auto
+        width: auto
+        display: block
+        .results-summary__hero, .results-summary__info
+            width: 100%
+        .results-summary__hero
+            padding: 25px 50px
+            border-radius: 0 0 32px 32px
+            h2
+                font-size: 18px
+            .circle
+                .big-number
+                    font-size: 56px
+                .quantity
+                    font-size: 16px
+            h3
+                font-size: 24px
+            p
+                font-size: 16px
+        .results-summary__info
+            h2
+                font-size: 18px
+            .element
+                h3
+                    font-size: 16px
+                .number-of
+                    display: 16px
+    .attribution
+        margin: 50px auto
