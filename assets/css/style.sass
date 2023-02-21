@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap')
+
+// Colors 
+$white: hsl(0, 0%, 100%)
+$red: hsl(0, 100%, 67%)
+$yellow: hsl(39, 100%, 56%)
+$green: hsl(166, 100%, 37%)
+$blue: hsl(234, 85%, 45%)
+$navyBlue: #303B59
+$grey: #cac9ff
+
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0
+    font-family: 'Hanken Grotesk', sans-serif
+
+.results-summary
+    max-width: 736px
+    height: 512px
+    margin: calc(50vh - 256px) auto auto auto
+    display: flex
+    justify-content: center
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15)
+    border-radius: 32px
+    .results-summary__hero, .results-summary__info
+        width: 50%
+    .results-summary__hero
+        text-align: center
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%)
+        color: $white
+        border-radius: 32px
+        padding: 35px
+        h2
+            color: $grey
+            text-transform: capitalize
+            font-size: 24px
+            font-weight: 700
+        .circle
+            margin: auto
+            display: flex
+            align-items: center
+            background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%)
+            border-radius: 500px
+            height: 200px
+            width: 200px
+            vertical-align: middle
+            div
+                margin: auto
+            .big-number
+                font-size: 72px
+                font-weight: 800
+            .quantity
+                font-size: 18px
+                font-weight: 700
+                color: #8980f4
+                margin-top: -5px
+        h3
+            font-size: 32px
+            font-weight: 700
+        p
+            font-size: 18px
+            font-weight: 500
+    .results-summary__info
+        padding: 35px 35px 35px 40px
+        h2
+            color: $navyBlue
+            font-size: 24px
+            font-weight: 700
+            margin-bottom: 12px
+        .element
+            display: flex
+            justify-content: space-between
+            margin-top: 16px
+            padding: 18px
+            h3
+                font-size: 18px
+                font-weight: 500
+                margin: 0
+            p
+                margin: 0
+            .feature-red, .feature-yellow, .feature-green, .feature-blue
+                display: flex
+            .feature-red
+                color: $red
+            .feature-yellow
+                color: $yellow
+            .feature-green
+                color: $green
+            .feature-blue
+                color: $blue
+            img
+                width: 20px
+                height: 20px
+                margin-right: 15px
+            .number-of
+                color: #9298ac
+                font-size: 18px
+                font-weight: 700
+                span
+                    color: $navyBlue
+                    font-weight: 700
+        .red, .yellow, .green, .blue
+            border-radius: 12px
+        .red
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555
+        .yellow
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E
+        .green
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F
+        .blue
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6
+    .continue
+        background: $navyBlue
+        text-align: center
+        display: block
+        border-radius: 128px
+        color: $white
+        text-decoration: none
+        padding: 20px 40px
+        margin-top: 25px
+        &:hover
+            background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%)
+    
+.attribution
+    margin-top: 50px !important
+    font-size: 11px
+    text-align: center
+    a
+        color: hsl(228, 45%, 44%)
+
+// Mobile version
+@media (max-width: 600px)
+    .results-summary
+        margin: 0
+        height: auto
+        width: auto
+        display: block
+        .results-summary__hero, .results-summary__info
+            width: 100%
+        .results-summary__hero
+            padding: 25px 50px
+            border-radius: 0 0 32px 32px
+            h2
+                font-size: 18px
+            .circle
+                .big-number
+                    font-size: 56px
+                .quantity
+                    font-size: 16px
+            h3
+                font-size: 24px
+            p
+                font-size: 16px
+        .results-summary__info
+            h2
+                font-size: 18px
+            .element
+                h3
+                    font-size: 16px
+                .number-of
+                    display: 16px
+    .attribution
+        margin: 50px auto
