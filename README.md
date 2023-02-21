@@ -1,2 +1,2 @@
 # Frontend-mentor
-Repository for all frontendmentor.io excercises
+Repository for all frontendmentor.io challenges
